@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: component-orchestrator
+
+  jackson:
+    mapping:
+      accept-case-insensitive-enums: true
+
+  web:
+    error:
+      include-message: always
+
+components:
+  validation:
+    url: http://localhost:${server.port:8080}/stub/validation
+  calculation-adapter:
+    url: http://localhost:${server.port:8080}/stub/calculation-adapter
+  calculation:
+    url: http://localhost:${server.port:8080}/stub/calculation
+    api-key: ${CALCULATION_API_KEY}

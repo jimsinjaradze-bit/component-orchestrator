@@ -1,0 +1,3 @@
+logging:
+  level:
+    com.solveva.component_orchestrator: OFF

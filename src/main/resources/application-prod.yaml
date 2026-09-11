@@ -1,0 +1,12 @@
+components:
+  validation:
+    url: https://validation.internal.solveva.com/api/v1/validate
+  calculation-adapter:
+    url: https://calc-adapter.internal.solveva.com/api/v1/adapt
+  calculation:
+    url: https://calculation.internal.solveva.com/api/v1/calculate
+    api-key: ${CALCULATION_API_KEY}
+
+logging:
+  level:
+    com.solveva.component_orchestrator: TRACE
